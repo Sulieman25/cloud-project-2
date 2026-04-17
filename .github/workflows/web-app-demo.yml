@@ -56,3 +56,4 @@ jobs:
         with:
           name: gp1-demo-image
           path: gp1-demo.tar
+          
