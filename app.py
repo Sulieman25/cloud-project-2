@@ -7,7 +7,7 @@ def add_numbers(a, b):
 
 @app.route("/")
 def home():
-    return jsonify({"status": "ok", "message": "Hello from gp1-demo!"})
+    return jsonify({"status": "ok", "message": "Hello from cloud-project-2! \n Sulieman Wardat says hello"})
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8080) # nosec B104
