@@ -43,17 +43,17 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       - name: Build Docker image
-        run: docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/gp1-demo:latest .
+        run: docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/cloud-project-2:latest .
 
       - name: Push Docker image to Docker Hub
-        run: docker push ${{ secrets.DOCKERHUB_USERNAME }}/gp1-demo:latest
+        run: docker push ${{ secrets.DOCKERHUB_USERNAME }}/cloud-project-2:latest
 
       - name: Save Docker image locally
-        run: docker save ${{ secrets.DOCKERHUB_USERNAME }}/gp1-demo:latest -o gp1-demo.tar
+        run: docker save ${{ secrets.DOCKERHUB_USERNAME }}/cloud-project-2:latest -o cloud-project-2.tar
 
       - name: Upload Docker image as artifact
         uses: actions/upload-artifact@v4
         with:
-          name: gp1-demo-image
-          path: gp1-demo.tar
+          name: cloud-project-2-image
+          path: cloud-project-2.tar
           
