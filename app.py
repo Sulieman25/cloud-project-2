@@ -15,7 +15,7 @@ HTML_PAGE = """
       <input type="number" name="a" required class="form-control"><br><br>
       <label class="form-label">Second number:</label>
       <input type="number" name="b" required class="form-control"><br><br>
-      <button type="submit" value="Add" class="btn btn-primary"></button>
+      <button type="submit" value="Add" class="btn btn-primary">Add</button>
     </form>
     {% if result is not none %}
       <h2>Result: {{ result }}</h2>
